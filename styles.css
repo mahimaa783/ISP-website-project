@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this as needed */
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    color: rgb(145, 71, 71);
+    text-align: left;
+}
+
+.welcome-slide {
+    background-image: url('/images/service1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.service-slide {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark, faded background */
+    background-size: cover;
+    background-position: center;
+}
+
+.service-slide .buttons {
+    margin-top: 20px;
+}
+
+.know-more-btn, .book-now-btn {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.know-more-btn:hover, .book-now-btn:hover {
+    background-color: #ddd;
+}
